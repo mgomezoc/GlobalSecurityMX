@@ -1,0 +1,37 @@
+Cableado estructurado 
+
+Se conoce como cableado estructurado al sistema de cables, conectores, canalizaciones y dispositivos que permiten establecer una infraestructura de telecomunicaciones en un edificio. La instalación y las características
+ del sistema deben cumplir con ciertos estándares para formar parte de la condición de cableado estructurado.
+
+Funcionalidades
+
+Actualmente en los estandares de cableados de red he instalaciones de fibra optica, se necesitan de test de calidad de comunicacion,
+etiquetados, identificaciones y manejo adecuado de los cableados para no ser dañados,asi mismo contando con los cables con las
+mejores categorias 6, 6a, 7, y todos sus demas complementos para su apto flujo de velocidad.
+
+Como funcionan
+
+Todos sabemos como trabaja el internet a mayor es tu paquete de datos mejor descarga de informacion,
+pero que pasa si te entregaran tu servicio con un cable degradado y sus tomas viejas y obsoletas entonces pues seria deficiente tu velocidad de navegacion.
+bueno esto se basa en el mismo sistema en los cableados por ejemplo la fibra optica se pueden manejar velocidades de hasta 10gb/s
+un cable categoria 5e la velocidad es de 100 mhz y la de la categoria 6 es de 250mhz, entonces cual crees que tenga menos perdiada de datos.
+todo esto se basa en el armado del cable y su correcta instalacion.
+
+imagen 1                                                                             imgen 2 
+
+
+
+
+
+
+
+
+
+
+
+
+banner 
+
+
+Al final poner un boton donde diga;Solisita a un asesor. y que ahi abra la ventana que diga. deja tu nombre, telefono o correo y un asesor te llamara o responera a la brevedad.que me lo mande al correo de ventas.
+ 	

@@ -1,0 +1,19 @@
+Barreras vehiculares
+
+El sistemas de acceso vehicular es uno de los puntos importantes para el acceso controlado ya que podemos definir 
+quien tiene o no acceso a nuestras instalaciones, definido la seguridad de tanto de los residentes como la de los vehiculos.
+ya que se colocan sistemas de seguridad tales como fotoceldas, sensores de masa, y poncha llantas para evitar golpes inesperados.
+
+
+
+Funcionalidades.
+
+
+El accceso vehicular es una de las mejores herramientas para el acceso controlado y desatendido para los personas de seguridad 
+ya que tenemos la funcionalidad de poder mesclar las funciones delas barreras con controles de acceso y lectoras de larga distancia,asi como
+detectores de presencia vehicular.
+
+Banner 
+
+
+Al final poner un boton donde diga;Solisita a un asesor. y que ahi abra la ventana que diga. deja tu nombre, telefono o correo y un asesor te llamara o responera a la brevedad.que me lo mande al correo de ventas.

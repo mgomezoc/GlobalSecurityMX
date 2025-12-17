@@ -1,0 +1,87 @@
+@desktop: ~"only screen and (min-width: 960px) and (max-width: 1199px)";
+@tablet: ~"only screen and (min-width: 720px) and (max-width: 959px)";
+@mobile: ~"only screen and (max-width: 480px)";
+header {
+    background: #fff;
+    text-align: center;
+    & .header-brand {
+        margin: 0px 0px 15px 0px;
+        text-align: left;
+        padding: 0px 0px 0px 25px;
+        & a {
+            display: inline-block;
+            @media @mobile {
+                width: 100%;
+                padding: 25px;
+            }
+            & img {
+                display: inline-block;
+                width: 100%;
+            }
+        }
+    }
+    & .header-menu-container {
+        background: linear-gradient(180deg, #ffffff, #b5b5b5);
+    }
+    & .header-menu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        & li {
+            flex: auto;
+            & a {
+                border-bottom: 5px solid transparent;
+                border-radius: 5px 5px 0px 0px;
+                color: #82786b;
+                display: block;
+                font-size: 18px;
+                padding: 8px;
+                text-decoration: none;
+                transition: all .2s linear;
+                &:hover,
+                &.active {
+                    border-bottom-color: orange;
+                    background: rgba(255, 165, 0, 0.16);
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    background: #fff;
+    font-weight: 900;
+    border-top: 5px solid #ed6f23;
+    padding: 15px 0 35px 0;
+    min-height: 130px;
+    & .footer-copy {
+        text-align: right;
+        padding: 15px;
+    }
+    & .footer-social {
+        padding: 15px;
+        text-align: center;
+        & a {
+            display: inline-block;
+            margin-right: 8px;
+            &:first-child {
+                margin-left: 8px;
+            }
+        }
+    }
+}
+
+#copy {
+    padding: 35px;
+    text-align: center;
+    background: linear-gradient(180deg, #ffffff, #b5b5b5);
+    & h5 {
+        font-size: 12px;
+        color: #7d7d7d;
+        letter-spacing: 1px;
+        & a {
+            color: #7d7d7d;
+        }
+    }
+}

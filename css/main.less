@@ -1,0 +1,684 @@
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+   @zkar13
+   ========================================================================== */
+
+@import "animate";
+@desktop: ~"only screen and (min-width: 960px) and (max-width: 1199px)";
+@tablet: ~"only screen and (min-width: 720px) and (max-width: 959px)";
+@mobile: ~"only screen and (max-width: 480px)";
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+body {
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    background: #eee url(../img/bg.png) no-repeat;
+}
+
+.Exo {
+    font-family: 'Oswald', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #a96e21;
+    letter-spacing: 5px;
+    .Exo;
+}
+
+h1 {
+    color: #e93300;
+}
+
+.header-brand a {
+    animation: swing-in-top-fwd 1.5s linear;
+}
+
+.header-menu li a {
+    animation: text-focus-in 1s ease-in-out;
+}
+
+.swing-in-top-fwd {
+    -webkit-animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    -moz-animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+
+section {
+    position: relative;
+    & > h1 {
+        animation: bgSection 25s ease infinite alternate;
+        background-size: cover !important;
+        background: #333;
+        color: #fff;
+        cursor: default;
+        height: 150px;
+        line-height: 150px;
+        margin-bottom: 25px;
+        overflow: hidden;
+        padding: 0px 15px;
+        position: relative;
+        text-align: center;
+        z-index: 1;
+        @media @mobile {
+            line-height: 1.5;
+        }
+        &:hover {
+            &:after {
+                background: rgba(105, 61, 1, 0.6);
+            }
+        }
+        &:after {
+            transition: all 0.4s ease;
+            position: relative;
+            background: rgba(105, 61, 1, 0.43);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: "";
+            z-index: -1;
+        }
+    }
+}
+
+@keyframes bgSection {
+    0% {
+        background-position: 0%, 0%;
+    }
+    100& {
+        background-position: 0%, 100%;
+    }
+}
+
+#servicios {
+    margin-top: 25px;
+    & .servicio {
+        background-color: #ccc;
+        background-size: cover;
+        border: 2px solid #000;
+        color: #eee;
+        display: inline-block;
+        height: 300px;
+        margin: 15px;
+        position: relative;
+        transition: all .8s linear;
+        width: 90%;
+        z-index: 9;
+        .animated;
+        .fadeInUp;
+        &.cctv {
+            background-image: url(../img/servicios/cctv.jpg);
+        }
+        &.cableado {
+            background-image: url(../img/servicios/cableadoEstructurado.jpg);
+        }
+        &.alarmaIncendio {
+            background-image: url(../img/servicios/alarmaIncendio.jpg);
+        }
+        &.barrerasVehiculares {
+            background-image: url(../img/servicios/barrerasVehiculares.jpg);
+        }
+        &.controlAcceso {
+            background-image: url(../img/servicios/controlAcceso.jpg);
+        }
+        &.seguridadPerimetral {
+            background-image: url(../img/servicios/seguridadPerimetral.jpg);
+        }
+        &:before {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 100%;
+            background: rgba(0, 0, 0, .7);
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all .3s ease-in-out;
+            z-index: -1;
+        }
+        &:hover {
+            & a {
+                color: #fff;
+                & span {
+                    top: 48%;
+                }
+            }
+            &:before {
+                width: 100%;
+            }
+        }
+        & a {
+            background: rgba(0, 0, 0, .4);
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            color: #eee;
+            display: inline-block;
+            font-size: 18px;
+            position: absolute;
+            text-align: center;
+            text-decoration: none;
+            & span {
+                transition: all .2s cubic-bezier(0.55, 0.09, 0.68, 0.53);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: inline-block;
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+#clientes {
+    background: #fff;
+    padding: 35px 0px 0px 0px;
+    & .clientes-container {
+        text-align: right;
+        & h3 {
+            padding: 15px 0px;
+        }
+    }
+    & .clientes-carrousel {
+        overflow: hidden;
+        padding: 15px;
+        white-space: nowrap;
+        box-shadow: inset 0px 0px 10px 10px #eee;
+        & img {
+            display: inline-block;
+            margin-right: 135px;
+            width: 200px;
+        }
+    }
+}
+
+#cctv {
+    & h1 {
+        background: #000 url(../img/slider/hdcctv1.jpg) no-repeat;
+    }
+    & img {
+        display: inline-block;
+        width: 200px;
+    }
+}
+
+#cableadoEstructurado {
+    & > h1 {
+        background: #000 url(../img/cableadoEstructurado/cableado2.jpg) no-repeat;
+    }
+    & .cableadoEstructurado-img {
+        float: right;
+        border-radius: 5px;
+        border: 5px solid #fff;
+        display: block;
+        margin-left: 15px;
+    }
+}
+
+#alarmasSistemasIncendio {
+    & > h1 {
+        background: #000 url(../img/alarmasSistemasIncendio/sistema-de-alarmas-para-casa-y-negocio-pepsacv.jpg) no-repeat;
+    }
+}
+
+#barrerasVehiculares {
+    & h1 {
+        background: #000 url(../img/servicios/barrerasVehiculares.jpg) no-repeat;
+    }
+}
+
+#seguridadPerimetral {
+    & > h1 {
+        background: #000 url(../img/seguridadPerimetral/bg.jpg) no-repeat;
+    }
+}
+
+#nosotros {
+    & > h1 {
+        background: #000 url(../img/nosotros.jpg) no-repeat;
+    }
+}
+
+#contacto {
+    & > h1 {
+        background: #000 url(../img/contacto.jpg) no-repeat;
+    }
+    & form {
+        background: #fff;
+        padding: 35px;
+        @media @mobile {
+            padding: 8px;
+        }
+    }
+}
+
+.rimg {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    border-radius: 5px;
+    border: 5px solid #fff;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2017-4-3 22:7:55
+ * http://animista.net
+ * T: @cssanimista
+ * ---------------------------------------------- */
+
+@-webkit-keyframes swing-in-top-fwd {
+    0% {
+        -webkit-transform: rotateX(-100deg);
+        transform: rotateX(-100deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 0
+    }
+    100% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 1
+    }
+}
+
+@keyframes swing-in-top-fwd {
+    0% {
+        -webkit-transform: rotateX(-100deg);
+        transform: rotateX(-100deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 0
+    }
+    100% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0
+    }
+    100% {
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1
+    }
+}
+
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0
+    }
+    100% {
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -.5em;
+        opacity: 0
+    }
+    40% {
+        opacity: .6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -.5em;
+        opacity: 0
+    }
+    40% {
+        opacity: .6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out
+    }
+    10% {
+        -webkit-transform: scale(.91);
+        transform: scale(.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+    17% {
+        -webkit-transform: scale(.98);
+        transform: scale(.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out
+    }
+    33% {
+        -webkit-transform: scale(.87);
+        transform: scale(.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out
+    }
+}
+
+@keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out
+    }
+    10% {
+        -webkit-transform: scale(.91);
+        transform: scale(.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+    17% {
+        -webkit-transform: scale(.98);
+        transform: scale(.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out
+    }
+    33% {
+        -webkit-transform: scale(.87);
+        transform: scale(.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out
+    }
+}
+
+@-webkit-keyframes kenburns-top-left {
+    0% {
+        -webkit-transform: scale(1) translate(0, 0);
+        transform: scale(1) translate(0, 0);
+        -webkit-transform-origin: 16% 16%;
+        transform-origin: 16% 16%
+    }
+    100% {
+        -webkit-transform: scale(1.25) translate(-20px, -15px);
+        transform: scale(1.25) translate(-20px, -15px);
+        -webkit-transform-origin: top left;
+        transform-origin: top left
+    }
+}
+
+@keyframes kenburns-top-left {
+    0% {
+        -webkit-transform: scale(1) translate(0, 0);
+        transform: scale(1) translate(0, 0);
+        -webkit-transform-origin: 16% 16%;
+        transform-origin: 16% 16%
+    }
+    100% {
+        -webkit-transform: scale(1.25) translate(-20px, -15px);
+        transform: scale(1.25) translate(-20px, -15px);
+        -webkit-transform-origin: top left;
+        transform-origin: top left
+    }
+}

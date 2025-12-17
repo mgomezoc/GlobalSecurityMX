@@ -1,0 +1,84 @@
+header {
+  background: #fff;
+  text-align: center;
+}
+header .header-brand {
+  margin: 0px 0px 15px 0px;
+  text-align: left;
+  padding: 0px 0px 0px 25px;
+}
+header .header-brand a {
+  display: inline-block;
+}
+@media only screen and (max-width: 480px) {
+  header .header-brand a {
+    width: 100%;
+    padding: 25px;
+  }
+}
+header .header-brand a img {
+  display: inline-block;
+  width: 100%;
+}
+header .header-menu-container {
+  background: linear-gradient(180deg, #ffffff, #b5b5b5);
+}
+header .header-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+header .header-menu li {
+  flex: auto;
+}
+header .header-menu li a {
+  border-bottom: 5px solid transparent;
+  border-radius: 5px 5px 0px 0px;
+  color: #82786b;
+  display: block;
+  font-size: 18px;
+  padding: 8px;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+header .header-menu li a:hover,
+header .header-menu li a.active {
+  border-bottom-color: orange;
+  background: rgba(255, 165, 0, 0.16);
+}
+.footer {
+  background: #fff;
+  font-weight: 900;
+  border-top: 5px solid #ed6f23;
+  padding: 15px 0 35px 0;
+  min-height: 130px;
+}
+.footer .footer-copy {
+  text-align: right;
+  padding: 15px;
+}
+.footer .footer-social {
+  padding: 15px;
+  text-align: center;
+}
+.footer .footer-social a {
+  display: inline-block;
+  margin-right: 8px;
+}
+.footer .footer-social a:first-child {
+  margin-left: 8px;
+}
+#copy {
+  padding: 35px;
+  text-align: center;
+  background: linear-gradient(180deg, #ffffff, #b5b5b5);
+}
+#copy h5 {
+  font-size: 12px;
+  color: #7d7d7d;
+  letter-spacing: 1px;
+}
+#copy h5 a {
+  color: #7d7d7d;
+}

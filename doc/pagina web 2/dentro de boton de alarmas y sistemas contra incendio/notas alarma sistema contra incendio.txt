@@ -1,0 +1,40 @@
+alarmas y sistemas contra incendio
+
+Un Sistema de Alarma está diseñado para proteger a su familia y a su patrimonio. 
+En el momento en que un intruso intente ingresar a su domicilio o negocio,
+ comenzará a sonar una sirena de forma local que alertará a los vecinos de manera inmediata
+ y al mismo tiempo el sistema enviará una señal a la Central de Monitoreo como sistema opcional o enviandole 
+alertas a su  movil para reducir costos en monitoreos mensuales.
+
+El sistema contra incendio, se basa en el concepto base de una alarma pero enfocada solamente a la deteccion de alguna 
+emergencia relacionada con algun icendio o fugas de algunos tipo de gas, el sistema al detectar humo en su camara del sensor 
+activa inmediatamente por medio audible y visual (sirena y estrobo)a todo las personas del lugar dandoles oportunidad de escapar y con su panel central
+poder verificar las personas asignadas las zonas afectadas o falsas alarmas.
+
+Funcionalidad
+
+Un sistema de alarma o sistema contra incendio consiste en la instalación de una serie de equipos electrónicos 
+conectados hacia el panel de control y están ubicados estratégicamente en su hogar o empresa considerando
+ proteger al máximo sus bienes. Estos dispositivos pueden ser sensores de movimiento, contactos magnéticos, 
+botones de pánico, detectores de humo, detectores de ruptura de cristal entre otros, y enviarán señales en forma 
+periódica al panel de control para tener siempre su correcto funcionaminto.
+
+
+imagen 1
+
+
+
+
+banner 
+
+Al final poner un boton donde diga;Solisita a un asesor. y que ahi abra la ventana que diga. deja tu nombre, telefono o correo y un asesor te llamara o responera a la brevedad.que me lo mande al correo de ventas.
+
+
+
+
+
+
+
+
+
+
