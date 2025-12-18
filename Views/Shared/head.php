@@ -1,3 +1,12 @@
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FLBEGNS3WE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FLBEGNS3WE');
+</script>
+
 <meta name="description" content="Seguridad electronica y comunicaciones">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
