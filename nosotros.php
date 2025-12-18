@@ -1,11 +1,19 @@
 <!doctype html>
-<html class="no-js" lang="es">
+<html class="no-js" lang="es-MX">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>GLOBAL SECURITY | Seguridad electronica y comunicaciones</title>
+    
+    <?php
+    // Variables SEO para esta página
+    $pageTitle = "Nosotros - Empresa de Seguridad en Monterrey";
+    $metaDescription = "Conoce a Global Security MX, empresa mexicana especializada en seguridad electrónica y comunicaciones. Misión, visión y valores que nos distinguen.";
+    $canonicalUrl = "https://globalsecuritymx.mx/nosotros.php";
+    ?>
+    
     <?php require("Views/Shared/head.php");?>
+    <title><?php echo $pageTitle; ?> | Global Security MX</title>
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
@@ -21,17 +29,17 @@
                         <p>Contamos con diferentes ramos , para brindarle soluciones en comunicaciones , cableado estructurado, cámaras de seguridad, alarmas contra incendio, seguridad perimetral , controles de acceso y barreras vehiculares, entre otros servicios , garantizando una integración completa de sus sistemas y mejorar los tiempos de sus necesidades.</p>
                         <p>Somos un equipo que trabaja con valores, que conoce las necesidades actuales y se esfuerza diariamente por ofrecer lo más avanzado en tecnología, soporte técnico altamente especializado, un trato humano amable y el respaldo que su empresa demanda.</p>
                         <div data-aos="fade-down">
-                            <img src="img/nosotros.jpg" alt="nosotros" class="rimg">
+                            <img src="img/nosotros.jpg" alt="Equipo de Global Security MX" class="rimg">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div>
-                        <h3>Misión</h3>
+                        <h2>Misión</h2>
                         <p>Brindar productos y servicios que generen a nuestros clientes una solución a sus necesidades, esforzándonos constantemente por exceder sus expectativas con calidad en el trabajo, tiempo esperado y servicio esmerado.</p>
                     </div>
                     <div>
-                        <h3>Visión</h3>
+                        <h2>Visión</h2>
                         <p>Consolidarnos como una organización en constante desarrollo, siendo parte activa del crecimiento del comercio y la industria.</p>
                         <p>Creemos en nuestros VALORES como la esencia para cumplir con los objetivos que nos trazamos, trabajamos con pasión para ser una organización de excelencia:</p>
                         <ul>

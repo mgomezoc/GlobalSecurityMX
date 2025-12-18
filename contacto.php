@@ -1,11 +1,19 @@
 <!doctype html>
-<html class="no-js" lang="es">
+<html class="no-js" lang="es-MX">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>GLOBAL SECURITY | Seguridad electronica y comunicaciones</title>
+    
+    <?php
+    // Variables SEO para esta página
+    $pageTitle = "Contacto - Cotiza tu Sistema de Seguridad";
+    $metaDescription = "Contáctanos para cotizar tu sistema de seguridad. Atención en Monterrey y área metropolitana. Llámanos al (81) 1806 8310 o envía tu mensaje.";
+    $canonicalUrl = "https://globalsecuritymx.mx/contacto.php";
+    ?>
+    
     <?php require("Views/Shared/head.php");?>
+    <title><?php echo $pageTitle; ?> | Global Security MX</title>
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
@@ -18,24 +26,24 @@
                 <div class="col-md-8">
                     <form id="frmContacto" method="post" action='email.php'>
                         <div class="form-group">
-                            <label>Nombre</label>
-                            <input type="text" name="nombre" class="form-control" placeholder="@nombre" required>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Tu nombre" required>
                         </div>
                         <div class="form-group">
-                            <label>Correo</label>
-                            <input type="email" name="correo" class="form-control" placeholder="correo@tuempresa.com" required>
+                            <label for="correo">Correo</label>
+                            <input type="email" id="correo" name="correo" class="form-control" placeholder="correo@tuempresa.com" required>
                         </div>
                         <div class="form-group">
-                            <label>Telefono</label>
-                            <input type="number" name="telefono" class="form-control" placeholder="telefono">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" class="form-control" placeholder="Tu teléfono">
                         </div>
                         <div class="form-group">
-                            <label>Asunto</label>
-                            <input type="text" name="asunto" class="form-control" value="Comentario" placeholder="@asunto" required>
+                            <label for="asunto">Asunto</label>
+                            <input type="text" id="asunto" name="asunto" class="form-control" value="Cotización" placeholder="Asunto" required>
                         </div>
                         <div class="form-group">
-                            <label>Comentario</label>
-                            <textarea name="comentario" class="form-control"></textarea>
+                            <label for="comentario">Comentario</label>
+                            <textarea id="comentario" name="comentario" class="form-control" placeholder="¿En qué podemos ayudarte?"></textarea>
                         </div>
                         <button type="submit" class="btn btn-default">Enviar</button>
                     </form>
@@ -61,7 +69,6 @@
     <?php require("Views/Shared/scripts.php");?>
     <script>
     setMenuActive("Contacto");
-
     </script>
 </body>
 

@@ -1,5 +1,13 @@
-# www.robotstxt.org/
+# robots.txt - Global Security MX
+# https://globalsecuritymx.mx
 
-# Allow crawling of all content
 User-agent: *
-Disallow:
+Allow: /
+
+# Archivos y carpetas a excluir
+Disallow: /Views/
+Disallow: /email.php
+Disallow: /*.json$
+
+# Sitemap
+Sitemap: https://globalsecuritymx.mx/sitemap.xml

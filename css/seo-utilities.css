@@ -1,0 +1,36 @@
+/* ==============================================
+   SEO & Accessibility Utilities
+   Agregar al final de main.css o como archivo separado
+   ============================================== */
+
+/* Screen Reader Only - Oculto visualmente pero accesible para SEO y lectores de pantalla */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Si prefieres H1 visible, usa esta clase en su lugar */
+.hero-title {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin: 20px 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Mejora visual para H2 de sección de servicios */
+#servicios h2 {
+    color: #9a2720;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #ed6f23;
+}
